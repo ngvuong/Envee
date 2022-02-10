@@ -12,6 +12,7 @@ html {
 
 body {
   font-family: sans-serif;
+  font-size: 1.6rem;
 }
 
 .header {
@@ -49,21 +50,33 @@ body {
   }
 
   &__text {
-    font-size: 1.6rem;
     line-height: 2;
     border-top: 2px solid #ffcc20;
   }
 }
 
 .project {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  // display: grid;
+  // grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
   gap: 2rem;
   padding: 5rem;
-  margin-top: 5rem;
 
-  .project__card {
-    border: 1px solid red;
+  &__card {
+    flex: 0 1 30rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
+
+    img {
+      width: 100%;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
   }
 }
 
