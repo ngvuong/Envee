@@ -10,6 +10,10 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  font-family: sans-serif;
+}
+
 .header {
   height: 50vh;
   background-image: linear-gradient(
@@ -28,6 +32,39 @@ html {
 }
 
 .section-about {
+  position: relative;
+  max-width: 50rem;
+  top: -10rem;
+  left: 50%;
+  padding: 5rem;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+  transform: translate(-50%);
+  background: white;
+
+  &__heading {
+    font-size: 2rem;
+    line-height: 2;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    line-height: 2;
+    border-top: 2px solid #ffcc20;
+  }
+}
+
+.project {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2rem;
+  padding: 5rem;
+  margin-top: 5rem;
+
+  .project__card {
+    border: 1px solid red;
+  }
 }
 
 @keyframes dance {
