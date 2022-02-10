@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.header {
+  &__image {
+    width: 200px;
+    height: 200px;
+    animation: 2s dance cubic-bezier(0.5, 0, 0.5, 1) infinite alternate;
+  }
+}
+
+@keyframes dance {
+  from {
+    transform: translateY(-10%);
+  }
+  to {
+    transform: translateY(10%);
+  }
+}
