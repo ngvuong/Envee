@@ -1,0 +1,8 @@
+@keyframes dance {
+  from {
+    transform: translateY(-10%);
+  }
+  to {
+    transform: translateY(10%) scale(1.1) rotate(10deg);
+  }
+}

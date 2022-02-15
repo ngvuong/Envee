@@ -1,0 +1,47 @@
+.section-about {
+  position: relative;
+  max-width: 50rem;
+  top: -10rem;
+  left: 50%;
+  padding: 5rem;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+  transform: translate(-50%);
+  background: white;
+
+  &__heading {
+    font-size: 2rem;
+    line-height: 2;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+
+    span {
+      display: inline-block;
+      padding: 0.5rem 0;
+      background-color: var(--color-primary);
+      border-radius: 0.5rem;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    right: 5rem;
+    top: -5rem;
+    width: 10rem;
+    border-radius: 1rem;
+    transform: rotate(45deg);
+
+    &:hover {
+      transform: rotate(0);
+    }
+  }
+
+  &__text {
+    font-size: 2rem;
+    line-height: 2;
+    border-bottom: 2px solid var(--color-primary);
+
+    span {
+      color: #d81168;
+    }
+  }
+}
